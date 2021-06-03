@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "task-1-1": "nodemon ./tasks/task-1/task-1-1"
+    "task-1-1": "nodemon ./tasks/task-1/task-1-1",
+    "task-1-2": "nodemon ./tasks/task-1/task-1-2"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Featurist505095/nodejs-study/issues"
   },
-  "homepage": "https://github.com/Featurist505095/nodejs-study#readme"
+  "homepage": "https://github.com/Featurist505095/nodejs-study#readme",
+  "dependencies": {
+    "csvtojson": "^2.0.10"
+  }
 }
