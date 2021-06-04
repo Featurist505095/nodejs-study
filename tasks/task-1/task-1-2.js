@@ -1,9 +1,12 @@
-const csv = require('csvtojson');
+import csv from 'csvtojson';
+import fs from 'fs';
+
 const inputFilePath = './tasks/task-1/csv/input.csv';
 const outputFilePath = './tasks/task-1/csv/output.txt';
-const fs = require('fs');
 
-const readStream = fs.createReadStream(inputFilePath);
+const readStream = fs.createReadStream(inputFilePath, {
+  highWaterMark: 65535
+});
 const writeStream = fs.createWriteStream(outputFilePath, {
   "flags": "a+"
 });
@@ -19,7 +22,6 @@ writeStream.on('error', onError);
 readStream
   .pipe(
     csv({
-      maxRowLength: 65535,
       downstreamFormat: "line",
       delimiter: "auto"
     })
