@@ -16,5 +16,19 @@
   "bugs": {
     "url": "https://github.com/Featurist505095/nodejs-study/issues"
   },
-  "homepage": "https://github.com/Featurist505095/nodejs-study#readme"
+  "homepage": "https://github.com/Featurist505095/nodejs-study#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.4",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.27.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "@babel/eslint-parser": "^7.14.4"
+  }
 }
